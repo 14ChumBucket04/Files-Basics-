@@ -3,7 +3,7 @@ public class Main {
 
 	public static void main(String[] args) 
 	{
-		File file = new File("C:\\Coding\\Java\\Files\\src\\Secret.txt");
+		File file = new File("Secret.txt");
 		
 		if(file.exists()) 
 		{
@@ -15,7 +15,7 @@ public class Main {
 		}
 	/*try 
 	{
-		FileWriter writer = new FileWriter("C:\\Coding\\Java\\Files\\src\\Secret.txt");
+		FileWriter writer = new FileWriter("Secret.txt");
 		writer.write("Hello World \n Its how the file writer function works and i used 'write' to add text");
 		writer.append("\n(File Writer)");
 		writer.close();
@@ -25,7 +25,7 @@ public class Main {
 		e.printStackTrace();
 	}*/
 	try {
-		FileReader reader = new FileReader("C:\\Coding\\Java\\Files\\src\\Secret.txt");
+		FileReader reader = new FileReader("Secret.txt");
 		int data = reader.read();
 		while(data != -1)
 		{
